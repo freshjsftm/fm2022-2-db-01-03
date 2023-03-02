@@ -1,0 +1,7 @@
+DROP TABLE A;
+CREATE TABLE A(
+  b int, 
+  c int,
+  CONSTRAINT "UNIQUE_PAIR" PRIMARY KEY (b,c)
+  );
+INSERT INTO A VALUES (1,2), (1,3), (2,1), (2,3), (2,2);
